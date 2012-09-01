@@ -1,0 +1,11 @@
+{
+  "name": "wintersmith-ejs",
+  "version": "0.1.0",
+  "author": "Stephen Allred <stephenallred@stevesmiscellany.com>",
+  "description": "ejs plugin for witnersmith",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": ">= 0.8.2",
+    "coffee-script": "1.2.x"
+  }
+}
