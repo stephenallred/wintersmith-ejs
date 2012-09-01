@@ -1,6 +1,6 @@
 {
   "name": "wintersmith-ejs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Stephen Allred <stephenallred@stevesmiscellany.com>",
   "description": "ejs plugin for witnersmith",
   "license": "MIT",
