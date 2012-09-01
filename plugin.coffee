@@ -13,15 +13,15 @@ module.exports = (wintersmith, callback) ->
         callback null, new Buffer @tpl(locals)
       catch error
         callback error
-        
-    fromFile: (filename, base, callback) ->
+
+    fromFile: (filename, base, callback) ->  
       fs.readFile path.join(base, filename), (error, contents) ->
         if error then callback error
         else
           try
-            tpl = ejs.compile contents.toString(), filename
+            tpl = ejs.compile contents.toString(), { filename: filename }
             callback null, new EjsTemplate tpl
-          catch
+          catch error
             callback error
 
   wintersmith.registerTemplatePlugin '**/*.ejs', EjsTemplate
