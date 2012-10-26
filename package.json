@@ -6,6 +6,6 @@
   "license": "MIT",
   "dependencies": {
     "ejs": ">= 0.8.2",
-    "coffee-script": "1.2.x"
+    "coffee-script": "1.3.x"
   }
 }
