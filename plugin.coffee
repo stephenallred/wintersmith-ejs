@@ -14,12 +14,12 @@ module.exports = (wintersmith, callback) ->
       catch error
         callback error
 
-  EjsTemplate.fromFile = (filename, base, callback) ->  
-    fs.readFile path.join(base, filename), (error, contents) ->
+  EjsTemplate.fromFile = (filepath, callback) ->  
+    fs.readFile filepath.full, (error, contents) ->
       if error then callback error
       else
         try
-          tpl = ejs.compile contents.toString(), { filename: filename }
+          tpl = ejs.compile contents.toString(), { filename: filepath.full }
           callback null, new EjsTemplate tpl
         catch error
           callback error
